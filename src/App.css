@@ -36,3 +36,44 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Custom CSS */
+
+.title-banner {
+  background-color: grey;
+  text-align: center;
+  height: 80px;
+  line-height: 80px;
+}
+
+.site-title {
+  color: white;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 1rem;
+
+  margin: 0;
+
+  padding: 0.5rem 0;
+
+  list-style: none;
+
+  border-bottom: 1px lightgrey solid;
+
+  box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+nav li a {
+  text-decoration: none;
+  color: grey;
+}

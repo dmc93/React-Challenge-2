@@ -1,0 +1,28 @@
+{
+    "tasks": [
+      {
+        "name": "write will",
+        "description": "finalise will for Joe Bloggs",
+        "duration": 2,
+        "imageUrl": "",
+        "priority":"low",
+        "id": 1
+      },
+      {
+        "name": "file accounts",
+        "description": "submit accounts for company xyz",
+        "duration": 8,
+        "imageUrl": "",
+        "priority":"high",
+        "id": 2
+      },
+      {
+        "name": "finish visualisation",
+        "description": "present data visualisation to board",
+        "duration": 3,
+        "imageUrl": "",
+        "priority":"medium",
+        "id": 3
+      }
+    ]
+  }
