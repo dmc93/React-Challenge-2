@@ -28,7 +28,7 @@ export default function CreateTask() {
         setDesc('')
         setImageUrl('')
         setDuration(0)
-        setPriority('low')
+        setPriority('Low')
 
     }
 
@@ -67,9 +67,9 @@ export default function CreateTask() {
             <select 
                     value={priority} 
                     onChange = {(e) => setPriority(e.target.value)} > 
-                    <option selected value="low">Low</option> 
-                    <option value="medium">Medium</option> 
-                    <option value="high">High</option> 
+                    <option selected value="Low">Low</option> 
+                    <option value="Medium">Medium</option> 
+                    <option value="High">High</option> 
             </select> 
             <br/>
             <br/>

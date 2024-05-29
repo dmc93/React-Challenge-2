@@ -77,3 +77,26 @@ nav li a {
   text-decoration: none;
   color: grey;
 }
+
+.items-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 80%;
+  gap: 2rem;
+  margin: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+  padding: 5px;
+  max-width: 250px;
+  box-shadow: 0 8px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.card-image{
+  
+}

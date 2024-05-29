@@ -25,18 +25,19 @@ const TaskPage = () => {
             <CreateTask />
             <br/>
             <br/>
-            <div className="taskItems">
-                {items.map((item) => (
-                        <TaskCard
-                        name = {item.name}
-                        description = {item.description}
-                        duration = {item.duration}
-                        priority = {item.priority}
-                        imageUrl = {item.imageUrl}
-                        />
-                ))}
-            </div>
+            <div className='items-grid'>
                 
+                    {items.map((item) => (
+                            <TaskCard
+                            name = {item.name}
+                            description = {item.description}
+                            duration = {item.duration}
+                            priority = {item.priority}
+                            imageUrl = {item.imageUrl}
+                            />
+                    ))}
+                
+            </div>    
 
 
         </div>
