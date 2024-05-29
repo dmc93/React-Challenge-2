@@ -17,44 +17,63 @@ export default function CreateTask() {
             {
                 method: 'POST',
                 headers: {"Content-Type" : "application/json"},
-                body: JSON.stringify(animal)
+                body: JSON.stringify(task)
 
             }
         )
 
-        alert("Animal added!")
+        alert("Task added!")
 
         setName('')
-        setSpecies('')
-        setAge('')
+        setDesc('')
+        setImageUrl('')
+        setDuration(0)
+        setPriority('low')
 
     }
 
 
     return(
         <form onSubmit={handleSubmit}>
-            <label>Name of Animal: </label>
+            <label>Name of Task: </label>
             <input type="text"
             required
             value={name}
             onChange={(e) => setName(e.target.value)} />
             <br/>
             <br/>
-            <label>Species: </label>
+            <label>Description: </label>
             <input type="text"
             required
-            value={species}
-            onChange={(e) => setSpecies(e.target.value)} />
+            value={description}
+            onChange={(e) => setDesc(e.target.value)} />
             <br/>
             <br/>
-            <label>Age: </label>
+            <label>Image URL: </label>
+            <input type="text"
+            required
+            value={imageUrl}
+            onChange={(e) => setImageUrl(e.target.value)} />
+            <br/>
+            <br/>
+            <label>Duration in Hours: </label>
             <input type="number"
             required
-            value={age}
-            onChange={(e) => setAge(e.target.value)} />
+            value={duration}
+            onChange={(e) => setDuration(e.target.value)} />
             <br/>
             <br/>
-            <button>Add Animal</button>
+            <label>Priority: </label>
+            <select 
+                    value={priority} 
+                    onChange = {(e) => setPriority(e.target.value)} > 
+                    <option selected value="low">Low</option> 
+                    <option value="medium">Medium</option> 
+                    <option value="high">High</option> 
+            </select> 
+            <br/>
+            <br/>
+            <button>Add Task</button>
         </form>
     )
 

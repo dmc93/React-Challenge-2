@@ -17,10 +17,11 @@ const ThemedComponent = () => {
             
             <BrowserRouter>
             <Navbar />
-            
+            <div>
             <p>Current Theme: {theme}</p>
             <button onClick={toggleTheme}>Toggle Theme</button>
-
+            <br/><br/>
+            </div>
             <Routes>
             <Route path='/' element={<HomePage />} />
             <Route path='/task' element={<TaskPage />} />
